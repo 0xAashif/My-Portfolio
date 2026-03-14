@@ -1,10 +1,17 @@
-document.querySelectorAll("nav a").forEach(link=>{
-link.addEventListener("click",e=>{
-if(link.hash!==""){
+// Smooth scroll for navigation links
+
+document.querySelectorAll('nav a').forEach(link => {
+
+link.addEventListener('click', function(e){
+
 e.preventDefault();
-document.querySelector(link.hash).scrollIntoView({
-behavior:"smooth"
+
+const section = document.querySelector(this.getAttribute('href'));
+
+section.scrollIntoView({
+behavior: "smooth"
 });
-}
+
 });
+
 });
