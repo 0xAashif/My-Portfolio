@@ -1,15 +1,15 @@
-document.querySelectorAll("a").forEach(link=>{
-link.addEventListener("click",function(e){
+document.querySelectorAll('a').forEach(link=>{
+link.addEventListener('click',function(e){
 
 if(this.hash!==""){
 
-e.preventDefault()
+e.preventDefault();
 
 document.querySelector(this.hash).scrollIntoView({
 behavior:"smooth"
-})
+});
 
 }
 
-})
-})
+});
+});
